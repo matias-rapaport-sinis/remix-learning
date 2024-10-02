@@ -16,7 +16,7 @@ export const loader = async () => {
   const response = await fetch("https://jsonplaceholder.typicode.com/posts");
   const data = await response.json();
   const json = JSON.stringify(data, null, 2);
-  console.log(data);
+  //console.log(data);
   // Return the data using the `json` helper
   return json;
 };
@@ -48,8 +48,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </head>
       <body>
         {children}
-        <pre>{data}</pre>
-
+    
         <ScrollRestoration />
         <Scripts />
       </body>
