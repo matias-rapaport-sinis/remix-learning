@@ -30,13 +30,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const data = useLoaderData();
   return (
     <main lang="en">
-        <h2> Aca estas {param.id} </h2>
         <pre> {data}</pre>
+        <h2> Aca estas {param.id} </h2>
 
     </main>
   );
 }
-/* 
-export default function App() {
-  return <Outlet />;
-} */

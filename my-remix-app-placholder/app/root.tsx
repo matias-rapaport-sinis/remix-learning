@@ -1,4 +1,5 @@
 import {
+  Link,
   Links,
   Meta,
   Outlet,
@@ -47,8 +48,18 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
+        <header>
+            <nav style={{
+              width : "100%", 
+              display : "flex",
+              backgroundColor : "pink",
+              }}> 
+              <Link style={{flex : 1}} to="/users"> USUARIOS </Link>
+              <Link style={{flex : 1}} to="/coments"> COMENTARIOS </Link> 
+              <Link style={{flex : 1}} to="/posts"> POSTS </Link> 
+            </nav>
+        </header>
         {children}
-    
         <ScrollRestoration />
         <Scripts />
       </body>
