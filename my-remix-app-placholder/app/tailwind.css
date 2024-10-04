@@ -10,3 +10,8 @@ body {
     color-scheme: dark;
   }
 }
+
+a{
+  color: rgb(17, 92, 158);
+  text-decoration: underline;
+}
